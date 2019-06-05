@@ -1,4 +1,4 @@
-﻿/* PROJETO  ATAD 2018-19
+/* PROJETO  ATAD 2018-19
 * Identificacao dos Alunos:
 *
 *      Numero: 160221039 | Nome: Hugo Ferreira
@@ -155,14 +155,14 @@ void load(PtList list, PtMap map) {
 
 	int error = fopen_s(&f, filename, "r"); //open the file in read mode
 
-	if (error) {
+	if (error != 0) {
 		printf("An error occurred... It was not possible to open the file %s ...\n", filename);
 		return;
 	}
 
 	int error2 = fopen_s(&f2, filename2, "r");
 
-	if (error2) {
+	if (error2 != 0) {
 		printf("An error occurred... It was not possible to open the file %s ...\n", filename2);
 		return;
 	}
